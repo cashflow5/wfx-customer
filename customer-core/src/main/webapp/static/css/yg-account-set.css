@@ -1,0 +1,42 @@
+body{background-color:#f7f7f7;}
+.mui-icon-back:before, .mui-icon-left-nav:before,.yg-header > .mui-title{color:#fff;}
+.yg-header{background:#e60012;color:#fff;}
+.mui-content > .mui-table-view:first-child{margin-top:0;border-bottom:10px solid #f7f7f7;}
+.mui-collapse-content li.mb10,.mui-collapse-content li.twoElement p{position:relative;padding-left: 75px;}
+.mui-collapse-content li.mb10 span{position: absolute;top:0;left:0;line-height: 34px;}
+.yg-account-setup section .fill-account-info li input,.yg-account-setup section .fill-account-info li .mui-btn{padding:5px 10px;height:34px;}
+.mui-collapse-content li.twoElement{padding-left:0;overflow: hidden;}
+.mui-collapse-content li.twoElement p{float:left;}
+.mui-collapse-content li.twoElement p:nth-child(1){width:53%;}
+.mui-collapse-content li.twoElement p:nth-child(2){width:47%;padding-left:60px;}
+.mui-collapse-content li.twoElement p:nth-child(2) span{left:10px;}
+.mui-table-view-cell.mui-collapse.mui-active > .mui-navigate-right:after, .mui-table-view-cell.mui-collapse.mui-active > .mui-push-right:after,.mui-table-view-cell.mui-collapse > .mui-navigate-right:after, .mui-table-view-cell.mui-collapse > .mui-push-right:after{font-size: 22px;}
+.mui-table-view:before{display:none;}
+.mui-navigate-right .iconfont{font-size:22px;margin-right: 5px;}
+.mui-table-view-cell.mui-collapse.mui-active .mui-table-view, .mui-table-view-cell.mui-collapse.mui-active .mui-collapse-content{margin:0;border:0 none;padding:0;}
+.mui-table-view-cell{padding:0 10px;}
+.mui-table-view-cell > a:not(.mui-btn){margin:0;padding:0;padding:10px 0;}
+/*.yg-account-setup section .fill-account-phone input[type="file"],.submit-file-images{width:137px;}*/
+.yg-account-setup section .fill-account-phone input[type="file"]{width:52px;height:52px;background:0 none;;opacity:0;position: absolute;top:0;left:0;}
+.submit-file-images{float:left;text-align: center;border:1px solid #e60012;color:#e60012;position:relative;border-radius:3px;}
+.hide,.mui-table-view:after,.mui-collapse .acconunt-tip{display:none;}
+.mui-active .acconunt-tip{display:block;}
+.acconunt-tip{margin:0;position: relative;padding-right:73px;}
+.yg-account-setup{margin-bottom:56px;}
+.acconunt-submit{margin:0;position: fixed;bottom:0;left:0;border:0 none;border-radius:0;}
+.hasArrow:after{font-size:19px;background-color:#fff;content:'\e581';position: absolute;right:8px;top:18px;display:inline-block;font-family:Muiicons;line-height:1;color:#bbb;text-decoration:none;-webkit-transform:translateY(-50%);transform:translateY(-50%);}
+.userCardSecond{padding-left:78px;padding-top:5px;}
+.look-example{position: absolute;top:20px;right:10px;text-decoration:underline;}
+.errorInfor{display:none;text-align: left;}
+.showTip{position: absolute;top:10px;right:42px;font-style:normal;height: 22px;line-height: 22px;}
+.cardImg{float: left;width:52px;height:52px;border-radius: 3px;border:1px solid #dadada;color:#848484;position:relative;margin-right:10px;overflow: hidden;}
+.cardImg span{display:block;}
+.userCard .mui-pull-left{margin-right: 10px;}
+.imgWrap img{width:100%;}
+.imgWrap a.deleteimg{display:block;width:20px;height:20px;position:absolute;right:3px;bottom:3px;z-index:10;border-radius:10px;
+    background:#ff0000 url(../images/prodetail/delete.png) center center no-repeat;background-size:70% 70%;}
+.userCard .errorInfor{clear:both;padding-left:75px;}
+.identityCardImg img{display:block;width:100%;}
+/*灰色样式*/
+.acconunt-submit-no{background-color:#e5e5e5;color:#878787;}
+.yg-account-setup section .fill-account-info-no li input{background-color:#e5e5e5;border:1px solid #e5e5e5;}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.yougou.wfx</groupId>
+        <artifactId>customer-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.yougou.wfx</groupId>
+    <artifactId>customer-service</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!--yougou-->
+        <dependency>
+            <groupId>com.yougou</groupId>
+            <artifactId>yougou-tools-common</artifactId>
+        </dependency>
+        <!--yougou-pay-->
+        <dependency>
+            <groupId>com.yougou</groupId>
+            <artifactId>yougou-pay-api</artifactId>
+        </dependency>
+        <!--feign http client-->
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-jaxb</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-slf4j</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.netflix.feign</groupId>
+            <artifactId>feign-jackson</artifactId>
+        </dependency>
+        <!--wfx-->
+        <dependency>
+            <groupId>com.yougou.wfx</groupId>
+            <artifactId>customer-common</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.yougou.wfx</groupId>
+            <artifactId>customer-model</artifactId>
+        </dependency>
+        <!--wfx-api-->
+        <dependency>
+            <groupId>com.yougou</groupId>
+            <artifactId>wfx-api</artifactId>
+        </dependency>
+        <dependency>
+                <groupId>com.yougou.wfx.appserver</groupId>
+                <artifactId>appserver-vo</artifactId>
+         </dependency>
+         
+          <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+        <!--spring-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>

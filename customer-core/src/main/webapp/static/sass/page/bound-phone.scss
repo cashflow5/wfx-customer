@@ -1,0 +1,43 @@
+.#{$yg-namespace}icon-left{
+    &{
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }
+    
+}
+.#{$yg-namespace}validate{
+    input.yg-icon-input{
+        padding-left: 35px;
+    }
+}
+.#{$yg-namespace}floor-service{
+    p{
+        padding:0 10px;
+    }
+    .service-erweima{
+        text-align: center;
+        img{
+            width: 215px;
+        }
+    }
+    .service-phone{
+        border-bottom: 10px solid #F7F7F7;
+    }
+    
+    .link-item{
+        display: block;
+        padding:0 10px;
+        > *{
+            vertical-align: middle;
+        }
+        .iconfont{
+            font-size: 2.6rem;
+        }
+        
+        .t3{
+            position: relative;
+            top: 3px;
+        }
+    }
+}

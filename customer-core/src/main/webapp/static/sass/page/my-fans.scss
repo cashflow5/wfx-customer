@@ -1,0 +1,23 @@
+.#{$yg-namespace}my-fans {
+    .mf-pt3 {
+        padding-top: 3px !important;
+    }
+    .mf-bg-help {
+        background-color: $c-gray-9;
+        
+    }
+    .mf-snajiao {
+        position: absolute;
+        position: absolute;
+        right: 8px;
+        top: -10px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 15px solid $c-gray-9;
+    }
+    .mf-color-gray{
+        color: $c-gray-3;
+    }
+}

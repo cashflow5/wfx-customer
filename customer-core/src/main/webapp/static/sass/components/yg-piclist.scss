@@ -1,0 +1,91 @@
+.#{$yg-namespace}piclist {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: justify;
+  @include clearfix();
+}
+
+.#{$yg-namespace}piclist-item {
+  $block-height:38px;
+  display: inline-block;
+  text-align: center;
+  @include box-sizing();
+  width: 50%;
+  float: left;
+  padding: 5px;
+  .content{
+    position: relative;
+    min-height: ($block-height * 2);
+    padding-bottom: 10px;
+    background-color: $c-white-0;
+    
+    .#{$yg-namespace}-piclist.normal &{
+      padding-bottom: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 288px;
+      border: 1px solid $c-gray-4;
+    }
+    p{
+      padding: 5px 0 0;
+      text-align: left;
+    }
+    .item-title{
+      display: block;
+      @include box-sizing(content-box);
+      margin: 0;
+      height: 36px;
+      font-size: 13px;
+      font-size: 1.3rem;
+      line-height: 1.45;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .item-price{
+      padding: 0;
+      margin: 0;
+      font-size: 1.5rem;
+      color: $c-red-1;
+      .item-price-source{
+          float: right;
+          margin-right: 20px;
+          font-size: 1rem;
+          color: $c-gray-3;
+      }
+    }
+    .item-alpha-block{
+      position: absolute;
+      z-index: 0;
+      width: 100%;
+      height: $block-height;
+      bottom: 0.3rem;
+      .item-bg{
+        position: absolute;
+        width: 100%;
+        @include opacity(0.4);
+        height: $block-height;
+        background-color: $c-black-0;
+      }
+      .item-title{
+        position: absolute;
+        z-index: 20;
+        color: $c-white-0;
+        > p{
+            color: $c-white-0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+

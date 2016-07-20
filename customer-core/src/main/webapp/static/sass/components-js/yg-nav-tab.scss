@@ -1,0 +1,13 @@
+@charset "utf-8";
+.#{$yg-namespace}nav-tab {
+    .nav-tags-scroll {
+        overflow-x: auto;
+        @at-root .nav-tags {
+            display: table;
+            width: 100%;
+            .nav-tag {
+                display: table-cell;
+            }
+        }
+    }
+}

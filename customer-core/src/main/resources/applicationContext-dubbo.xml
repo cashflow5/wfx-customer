@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans  http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+	 http://code.alibabatech.com/schema/dubbo	http://code.alibabatech.com/schema/dubbo/dubbo.xsd"
+       default-lazy-init="true">
+
+    <description>Dubbo provider配置</description>
+
+    <dubbo:application name="wfx-customer" />
+
+    <dubbo:registry protocol="zookeeper" address="${dubbo.registry.address}" />
+
+    <!--shop and seller-->
+    <dubbo:reference   id="shopFrontApi"   interface="com.yougou.wfx.shop.api.front.IShopFrontApi"
+                     check="false" protocol="dubbo" version="1.0" />
+    <dubbo:reference   id="sellerInfoFrontApi"  interface="com.yougou.wfx.seller.api.front.ISellerInfoFrontApi"
+                     check="false" protocol="dubbo" version="1.0" />
+    <!--order-->
+    <dubbo:reference   id="orderFrontApi"   interface="com.yougou.wfx.order.api.front.IOrderFrontApi" timeout="100000"
+                     check="false" protocol="dubbo" version="1.0" />
+    <dubbo:reference   id="logisticsFrontApi"  
+                     interface="com.yougou.wfx.order.api.front.ILogisticsFrontApi"
+                     check="false"
+                     protocol="dubbo"
+                     version="1.0" />
+    <!--commodity-->
+    <dubbo:reference   id="commodityStyleFrontApi"   interface="com.yougou.wfx.commodity.api.front.ICommodityStyleFrontApi"
+                     timeout="10000" check="false" protocol="dubbo" version="1.0" />
+    <!--aftersale-->
+    <dubbo:reference   id="afterSaleFrontApi"   interface="com.yougou.wfx.aftersale.api.front.IAfterSaleFrontApi"
+                     check="false" protocol="dubbo" version="1.0" />
+    <dubbo:reference   id="wFXSystemApi"   interface="com.yougou.wfx.system.api.IWFXSystemApi"
+                     check="false" protocol="dubbo" version="1.0" />
+    <!--member-->
+    <dubbo:reference   id="memberAddressFrontApi"   interface="com.yougou.wfx.member.api.front.IMemberAddressFrontApi"
+                     check="false" protocol="dubbo" version="1.0" />
+
+    <dubbo:reference   id="memberAccountFrontApi"  
+                     interface="com.yougou.wfx.member.api.front.IMemberAccountFrontApi" timeout="100000"
+                     check="false"
+                     protocol="dubbo"
+                     version="1.0" />
+    <dubbo:reference   id="memberActionLogFrontApi"  
+                     interface="com.yougou.wfx.member.api.front.IMemberActionLogFrontApi"
+                     check="false"
+                     protocol="dubbo"
+                     version="1.0" />
+    <dubbo:reference   id="messengerFrontApi"   interface="com.yougou.wfx.messenger.api.front.IMessengerFrontApi"
+                     check="false" protocol="dubbo"
+                     version="1.0" />
+    <dubbo:reference   id="fileUploadApi"  interface="com.yougou.wfx.system.api.IFileUploadApi"
+                     check="false" protocol="hessian"
+                     version="1.0" />
+    <dubbo:reference   id="shoppingcartFrontApi"   check="false" interface="com.yougou.wfx.order.api.front.IShoppingcartFrontApi" version="1.0"
+                     timeout="10000" protocol="dubbo" />
+
+    <dubbo:reference   id="systemmgAreaFrontApi"  
+                     check="false"
+                     interface="com.yougou.wfx.basicset.api.front.ISystemmgAreaFrontApi"
+                     version="1.0"
+                     timeout="10000"
+                     protocol="dubbo" />
+     
+     <dubbo:reference   timeout="10000"  id="finSellerInfoFrontApi"  interface="com.yougou.wfx.finance.api.front.IFinSellerInfoFrontApi" check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference     timeout="10000" id="finSellerInfoDetailFrontApi" 
+                     interface="com.yougou.wfx.finance.api.front.IFinSellerInfoDetailFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference    timeout="10000" id="commissionDetailFrontApi" 
+                     interface="com.yougou.wfx.finance.api.front.ICommissionDetailFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference     timeout="10000" id="goodsMarketFrontApi"  
+                     interface="com.yougou.wfx.cms.api.front.IGoodsMarketFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+                     
+     <dubbo:reference     timeout="10000" id="carouselFigureFrontApi"  
+                     interface="com.yougou.wfx.cms.api.front.ICarouselFigureFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference     timeout="10000" id="finSellerAccountWithdrawFrontApi"  
+                     interface="com.yougou.wfx.finance.api.front.IFinSellerAccountWithdrawFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference     timeout="10000" id="commoditySaleCatFrontApi"  
+                     interface="com.yougou.wfx.cms.api.front.ICommoditySaleCatFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference       timeout="10000" id="versionManageFrontApi"  
+                     interface="com.yougou.wfx.basicset.api.front.IVersionManageFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference       timeout="10000" id="discoverArticleFrontApi"  
+                     interface="com.yougou.wfx.discover.api.front.IDiscoverArticleFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>                
+     <dubbo:reference       timeout="10000" id="discoverCarouselFigureFrontApi"  
+                     interface="com.yougou.wfx.discover.api.front.IDiscoverCarouselFigureFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>                
+     <dubbo:reference       timeout="10000" id="discoverChannelFrontApi"  
+                     interface="com.yougou.wfx.discover.api.front.IDiscoverChannelFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference   timeout="10000" id="noticeFrontApi"  
+                     interface="com.yougou.wfx.notice.api.front.INoticeFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+     
+     <dubbo:reference   timeout="10000" id="commodityCortexFrontApi"  
+                     interface="com.yougou.wfx.commodity.api.front.ICommodityCortexFrontApi"
+                     check="false" protocol="dubbo" version="1.0"/>
+
+    <!--支付-->
+    <dubbo:reference   id="payApi" interface="com.yougou.pay.api.IPayApi"  version="1.0" check="false" protocol="dubbo" />
+    <!--优雅停机-->
+    <bean class="com.yougou.wfx.customer.configurations.dubbo.DubboDestruction"
+          destroy-method="destroy" lazy-init="false" />
+          
+    <!-- 访客 -->
+	<dubbo:reference    id="visitorFrontApi"
+                     check="false"
+                     interface="com.yougou.wfx.visitor.api.front.IVisitorFrontApi"
+                     version="1.0"
+                     timeout="10000"
+                     protocol="dubbo" />       
+</beans>

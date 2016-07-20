@@ -1,0 +1,41 @@
+.#{$yg-namespace}page-ufans{
+    .#{$yg-namespace}floor-gray{
+        background-color: $c-gray-0;
+    }
+    .links-box{
+        list-style: none;
+        li{
+            display: table;
+            width: 50%;
+            float: left;
+            &.w100p{
+                width: 100%;
+            }
+            .iconfont{
+                display: table-cell;
+                width: 35px;
+                font-size: 3.5rem !important;
+                &.f28{
+                    font-size: 2.8rem !important;
+                }
+            }
+            p{
+                display: table-cell;
+                line-height: 1.25;
+            }
+            > *{
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    .column-2-40{
+        display: table;
+        p{
+            display: table-cell;
+            vertical-align: top;
+            padding-right: 10px;
+        }
+            
+    }
+}

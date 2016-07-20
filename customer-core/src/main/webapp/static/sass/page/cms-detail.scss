@@ -1,0 +1,115 @@
+.#{$yg-namespace}cms-detail {
+    p {
+        margin-bottom: 0;
+    }
+    .mui-content {
+        background-color: $c-white-0;
+    }
+    .cms-content {
+        padding: 10px;
+        p {
+            display: block !important;
+        }
+        img {
+            width: 100% !important;
+        }
+        .cms-title-box {
+            display: table;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            width: 100%;
+            border-bottom: 1px dashed $c-gray-9;
+            .cms-item {
+                display: table-cell;
+                &:last-child {
+                    width: 50px;
+                    text-align: right;
+                    vertical-align: top;
+                }
+                > p {
+                    line-height: 25px;
+                }
+                .recommend{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    font-size: 1.2rem;
+                    line-height: 30px;
+                    border-radius: 20px;
+                    color: $c-white-0;
+                    background-color: $c-red-0;
+                    -webkit-transform: rotate(-30deg);
+                    -moz-transform: rotate(-30deg);
+                    -ms-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                    transform: rotate(-30deg);
+                }
+            }
+        }
+        .cms-text-box {
+            display: block;
+            padding: 0 5px 15px;
+            font-size: 1.3rem;
+            text-indent: 2em;
+        }
+        .cms-img-box {
+            margin-bottom: 10px;
+            >img {
+                width: 100%;
+            }
+        }
+        .cms-goods-box {
+            display: table;
+            padding: 5px;
+            margin-bottom: 15px;
+            width: 100%;
+            background-color: #f2f2f2;
+            .cms-item {
+                display: table-cell;
+                vertical-align: top;
+                line-height: 1.35;
+                &:first-child {
+                    width: 92px;
+                    > img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+                &:last-child {
+                    padding: 5px 8px;
+                }
+            }
+        }
+        .cms-shop-box {
+            @extend .cms-goods-box;
+//          border: 1px solid #d5d5d5;
+            background-color: #f2f2f2;
+            .cms-item:first-child {
+                margin: 10px 15px;
+                width: 60px;
+                > img {
+                    border-radius: 40px;
+                }
+            }
+            p.shop-desc {
+                height: 36px;
+                line-height: 1.25;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+        .cms-dashed-box {
+            padding-top: 1.5rem;
+            border-top: 1px dashed $c-gray-9;
+        }
+        .cms-share-box {
+            padding: 12px 15px;
+            border-top: 1px solid #ccc;
+            background-color: $c-gray-0;
+        }
+    }
+}

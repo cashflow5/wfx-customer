@@ -1,0 +1,120 @@
+.#{$yg-namespace}detail-share{
+    border-left: 1px solid $c-gray-5;
+    padding-left: 10px;
+    color: $c-gray-1;
+}
+.#{$yg-namespace}detail-title{
+    width: 84%;
+}
+.#{$yg-namespace}basic-info{
+    &{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    p{
+        margin-bottom: 0;
+        span{
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+    }
+}
+.#{$yg-namespace}add-shopcart-box{
+    .img-goods-100{
+        border: 1px solid $c-gray-5;
+        width: 30%;
+        float: left;
+        margin-right: 10px;
+        img{
+            width: 100%;
+        }
+    }
+    .yg-layout-main{
+        width: auto;
+    }
+    #close{
+        position: absolute;top: 5px;right: 10px;
+    }
+    .detail-price{
+        margin-top: 22px;
+    }
+}
+.#{$yg-namespace}info-notes-box{
+    .info-notes img{
+        width: 80%;
+    }
+}
+.#{$yg-namespace}detail-share-box{
+    .info-notes{
+        width: 100%;
+        .mui-pull-left{
+            width: 25%;
+            text-align: center;
+            p{margin-bottom: 0;}
+        }
+    }
+    
+}
+.#{$yg-namespace}detail-erweima-box{
+    &{
+        background: #fff;
+        border-radius: 10px;
+    }
+    .info-notes{
+        width: 100%;
+        .mui-pull-left{
+            width: 25%;
+            text-align: center;
+            p{margin-bottom: 0;}
+        }
+    }
+    .#{$yg-namespace}floor-erweima{
+        dl{
+            width: 45%;
+            margin-top: 0;
+            dt{
+                border: 1px solid $c-gray-5;
+                padding: 2px;
+                img{
+                    width: 100%;
+                }
+            }
+            dd p{
+                margin-bottom: 0;
+            }
+        }
+        div{
+            
+            width: 45%;
+            div{
+                border: 1px solid $c-gray-5;
+                padding: 2px;
+                width: 100%;
+                img{
+                    width: 100%;
+                }
+            }
+            p{
+                margin-bottom: 0;
+            }
+            
+        }
+    }
+    .yg-form-floor{
+        background: #f7f7f7;
+    }
+}
+.#{$yg-namespace}silder-popovers{
+    border: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+

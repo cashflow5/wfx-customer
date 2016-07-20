@@ -1,0 +1,18 @@
+@mixin yg-badge($bgcolor: $c-red-0, $textcolor: $c-white-0) {
+    padding: 2px 8px 1px;
+    text-align: center;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 3px;
+	color: $c-white-0;
+	background-color: $bgcolor
+}
+
+.#{$yg-namespace}badge-primary,
+.#{$yg-namespace}badge-red {
+	@include yg-badge();
+}
+
+.#{$yg-namespace}badge-pink {
+	@include yg-badge($c-pink-0);
+}

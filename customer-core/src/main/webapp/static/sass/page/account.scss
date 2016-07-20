@@ -1,0 +1,97 @@
+.#{$yg-namespace}account-setup{
+    section{
+        background: $c-white-0;
+        .mui-active{
+            background: $c-white-0;
+        }
+        .acconunt-bank{
+            
+        }
+        .acconunt-bank:after{
+            content: '\e580';
+        }
+        .acconunt-bank.mui-active:after{
+            content: '\e581';
+        }
+        .mui-table-view.fill-account-info:before{
+            height: 0px;
+        }
+        .fill-account-info{
+            li.bank-map{
+                
+            }
+            li.mui-table-view-cell:after{
+                height: 0px;
+            }
+            li{
+                input{
+                    margin-bottom: 0;
+                }
+                .mui-btn{
+                    width: 100%;
+                    position: static;
+                    transform: none;
+                    -webkit-transform: none;
+                    text-align: left;
+                    height: 40px;
+                }
+            }
+        }
+        .fill-account-phone{
+            input[type="file"]{
+                width: 25%;
+            }
+        }
+    }
+    
+}
+.#{$yg-namespace}appli-info{
+    .appli-top{
+        border-bottom: 1px solid #CFCFCF;
+        border-top: 1px solid #CFCFCF;
+        padding:15px 0 15px 15px;
+        background: #fff;
+        margin-bottom: 10px;
+    }
+    .appli-bottom{
+        background: #fff;
+        border-top: 1px solid #CFCFCF;
+    }
+}
+.#{$yg-namespace}appli-m-info{
+    > * {
+        vertical-align: middle;
+    }
+    .info-title{
+        .info-text{
+            display: inline-block;
+            width: 85px;
+        }
+        select{width: 60%;border: 1px solid #CFCFCF!important;border-radius: 3px;padding:5px;margin-bottom: 0;}
+        input{width: 60%;border: 1px solid #CFCFCF!important;border-radius: 3px;height: auto;padding: 5px;margin-bottom: 0;}
+    }
+    h6{
+         width: 100%; color: #a9a9a9;text-align: center;
+    }
+    .sure-95-red{
+        padding: 10px 0; background: #E60012;color: #fff;border-radius: 3px;width: 90%;display: block;margin: 0 auto;
+    }
+}
+.app-img-empty{
+    background: none;
+    width: 63px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

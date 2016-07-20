@@ -1,0 +1,11 @@
+.#{$yg-namespace}validate{
+	input{
+	    margin-bottom: 0;
+	}
+	.error-msg{
+	    padding: 0 !important;
+	    height: 20px;
+        line-height: 20px;
+	    color: $c-red-0;
+	}
+}

@@ -1,0 +1,5 @@
+[#ftl]
+[#-- @implicitly included --]
+[#-- @ftlvariable name="static_version" type="java.lang.String" --]
+[#-- @ftlvariable name="myOrderListCommoditySize" type="java.lang.Integer" --]
+[#-- @ftlvariable name="context" type="java.lang.String" --]

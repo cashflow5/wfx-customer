@@ -1,0 +1,32 @@
+.#{$yg-namespace}quality {
+    &{
+        width: 100%;
+        max-width: 640px;
+        margin: 0 auto;
+        background: $c-white-0;
+//      padding: 10% 10% 20% 10%;
+        
+        img{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            z-index: 0;
+        }
+        img.img-top{
+            top: 0;
+        }
+        img.img-bot{
+            bottom: 0;
+        }
+        .#{$yg-namespace}qulity-center{
+            background:url(../images/quality_03.png);
+            background-size:100%;
+            padding: 10% 10% 30% 10%;
+            line-height: 24px;
+            div p{
+                text-indent: 2em;
+            }
+        }
+        
+    }
+}

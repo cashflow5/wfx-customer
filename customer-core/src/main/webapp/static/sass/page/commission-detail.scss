@@ -1,0 +1,66 @@
+.#{$yg-namespace}commission-detail {
+    .mui-popover{
+        min-height: 140px;
+    }
+    .mui-navigate-right:after {
+        color: #8dBFea !important;
+    }
+    .cor-094{
+        color: #094;
+    }
+    .cor-84{
+        color: #848484;
+    }
+    .mt0{
+        margin-top: 0 !important;
+    }
+    .mui-bar-tab {
+        position: relative;
+        display: block;
+        &:after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: #c8c7cc;
+            content: '';
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 1px;
+            background-color: #c8c7cc;
+            content: '';
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        .mui-active{
+            background-color: #fff;
+        }
+    }
+    .c-tab-view{
+        .mui-table-view-cell{
+            background-color: #f7f7f7;
+            padding: 8px 15px;
+            .mui-navigate-right{
+                .mui-badge{
+                    background-color: #f7f7f7;
+                }
+                &:after{
+                    content: "";
+                }
+            }
+        }
+    }
+    .mui-table-view{
+        .mui-badge{
+            background-color: #fff;
+            font-size: 1.4rem;
+        }
+    }
+}

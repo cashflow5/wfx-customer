@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+  @mixin margin-left-or-right($position:left, $width: 100px){
+    @if $position == left{
+        margin-right: -$width;
+    }@else{
+        margin-left: -$width;
+    }
+  }
+//$position 位置 (left, right), $width 固定框的宽度, $space 固定框与自动框之间的间距
+@mixin g-layout-column-2($position:left, $width: 100px, $space: 10px){
+  > .#{$yg-namespace}layout-main {
+    width: 100%;
+    float: left;
+    > .#{$yg-namespace}layout-container {
+      margin-#{$position}: $width + $space;
+    }
+  }
+
+  > .#{$yg-namespace}layout-#{$position} {
+    position: relative;
+    float: $position;
+    @include margin-left-or-right($position, $width);
+    width: $width;
+    @include box-sizing();
+  }
+  @include clearfix();
+}
+
+//$leftWidth 左边固定框的宽度, $rightWidth 右边固定框的宽度，$space 固定框与自动框之间的间距
+@mixin g-layout-column-3($leftWidth: 50px, $rightWidth: 50px, $spance: 10px){
+  > .#{$yg-namespace}layout-left {
+    width: $leftWidth;
+    margin-right: -$leftWidth;
+    float: left;
+    overflow: hidden;
+  }
+
+  .#{$yg-namespace}layout-main {
+    float: left;
+    width: 100%;
+    > .#{$yg-namespace}layout-container {
+      margin-left: $leftWidth + $spance;
+      margin-right: $rightWidth + $spance;
+    }
+  }
+
+  > .#{$yg-namespace}layout-right {
+    float: right;
+    width: $rightWidth;
+    margin-left: -$rightWidth;
+    overflow: hidden;
+  }
+  @include clearfix();
+}

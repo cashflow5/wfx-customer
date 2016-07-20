@@ -1,0 +1,52 @@
+@mixin box-sizing ($value: border-box) {
+	-webkit-box-sizing: $value;
+	-moz-box-sizing: $value;
+	-ms-box-sizing: $value;
+	-o-box-sizing: $value;
+	box-sizing: $value;
+}
+
+@mixin opacity($opvalue: 1) {
+	-webkit-opacity: $opvalue;
+	-moz-opacity: $opvalue;
+	-ms-opacity: $opvalue;
+	-o-opacity: $opvalue;
+	opacity: $opvalue;
+}
+
+@mixin border-radius($rdvalue: 50px){
+	-webkit-border-radius: $rdvalue;
+	-moz-border-radius: $rdvalue;
+	border-radius: $rdvalue;
+}
+
+@mixin animate-rotate($opts:rotate(180deg)){
+	@include transition(all 0.3s ease-in-out);
+	&.active {
+		@include transform($opts);
+	}
+}
+
+@mixin text-overflow($overheight: 30px, $webkit-line: 2){
+    max-height: $overheight;					
+	color: $c-black-0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $webkit-line;
+    -webkit-box-orient: vertical;
+}
+
+@mixin animate($param: all, $in: .5s, $out: 0s, $aimate: ease-in-out){
+	-webkit-transition: $param $in $aimate $out;
+    -moz-transition: $param $in $aimate $out;
+    -ms-transition: $param $in $aimate $out;
+    -o-transition: $param $in $aimate $out;
+    transition: $param $in $aimate $out;
+}
+
+@mixin boxshadow($shadow: 0 0 1px 1px rgba(130, 130, 130, 0.7)){
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	box-shadow: $shadow;
+}

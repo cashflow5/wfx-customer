@@ -1,0 +1,32 @@
+.#{$yg-namespace}layout-column-right{
+  @include g-layout-column-2(right, 40px, 10px);
+}
+
+.#{$yg-namespace}layout-column-right-55{
+  @include g-layout-column-2(right, 55px, 10px);
+}
+.#{$yg-namespace}layout-column-right-55-0{
+  @include g-layout-column-2(right, 55px, 0);
+}
+
+.#{$yg-namespace}layout-column-left{
+  @include g-layout-column-2(left, 30px, 10px);
+}
+.#{$yg-namespace}layout-column-left-40{
+  @include g-layout-column-2(left, 40px, 10px);
+}
+.#{$yg-namespace}layout-column-left-76{
+  @include g-layout-column-2(left, 76px, 10px);
+}
+.#{$yg-namespace}layout-column-left-80{
+  @include g-layout-column-2(left, 80px, 10px);
+}
+.#{$yg-namespace}layout-column-left-110{
+  @include g-layout-column-2(left, 110px, 10px);
+}
+.#{$yg-namespace}layout-column-left-120{
+  @include g-layout-column-2(left, 120px, 10px);
+}
+.#{$yg-namespace}layout-column3{
+  @include g-layout-column-3(90px, 80px, 10px);
+}

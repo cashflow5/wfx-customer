@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+$yg-namespace: "yg-" !default;
+$font-yahei: "microsoft yahei";
+
+$c-red-0: #e60013;
+$c-red-1: #f27a84;
+$c-red-1: #af000e;
+//页面背景色
+$c-gray-0: #f7f7f7;
+$c-gray-1: #848484;
+$c-gray-2: #f2f1f6;
+
+//文字灰色
+$c-gray-3: #b8b8b8;
+//商品列表边框
+$c-gray-4: #e6eae9;
+//底部bar连线
+$c-gray-5: #cccccc;
+//底部bar背景色
+$c-gray-6: #fbfbfb;
+//浮动购物车背景
+$c-gray-7: #7f7f7f;
+//分类标签边框颜色
+$c-gray-8: #bfbfbf;
+$c-gray-9: #d7d7d7;
+//分销商背景
+$c-gray-10:#efefef;
+$c-blue-0: #0ba4ea;
+$c-blue-1: #00aaee;
+$c-blue-1: #007AFF;
+$c-yellow-0: #f39800;
+$c-yellow-1: #fffaf4;
+$c-yellow-1: #f3a600;
+$c-yellow-1: #fef4dc;
+$c-green-0: #009944;
+$c-green-1: #38b035;
+$c-pink-0: #ed606b;
+
+$c-white-0: #fff;
+$c-black-0: #252525;
+$body-background-color: $c-white-0;
+
+$header-bar-height: 44px;
+
+$img-scale: 2;
+
+
+//font size
+$web-font-size-source: 62.5%;
+
+
+/* reset mui var*/
+$font-size-default: 1.4rem;
+//$font-family-default: "SimHei","Helvetica Neue",Arial,"Droid Sans",sans-serif;
+$font-family-default: "microsoft yahei","Helvetica Neue",Arial,"Droid Sans",sans-serif;
+$primary-color: $c-black-0;
+$negative-color:$c-red-0;
+//$positive-color:$c-red-0;

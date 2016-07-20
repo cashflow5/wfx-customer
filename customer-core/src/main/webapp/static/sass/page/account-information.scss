@@ -1,0 +1,23 @@
+.#{$yg-namespace}account-information {
+    .user-head-portrait{
+        display:inline-block;
+        width:40px;
+        height:40px;
+        line-height:40px;
+        border:1px solid $c-gray-8;
+        border-radius:20px;
+        -webkit-border-radius:20px;
+        text-align: center;
+        overflow:hidden;
+        img{
+            height:40px;
+            vertical-align: bottom;
+        }
+        
+    }
+    .sex-selected{
+        border:0 !important;
+        padding: 6px 0;
+        width:22px;
+    }
+}

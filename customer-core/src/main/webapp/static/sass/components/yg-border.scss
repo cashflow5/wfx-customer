@@ -1,0 +1,17 @@
+.#{$yg-namespace}icon-border {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+    border: 2px solid $c-gray-8;
+    border-radius: 20px;
+    > .iconfont {
+        color: $c-gray-8;
+        font-size: 2.5rem !important;
+    }
+}
+
+.#{$yg-namespace}border-dashed-bottom {
+    border-bottom: 1px dashed $c-gray-8;
+}

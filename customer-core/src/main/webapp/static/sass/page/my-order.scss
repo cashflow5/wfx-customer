@@ -1,0 +1,101 @@
+.#{$yg-namespace}my-order {
+    .my-order > a:not(.mui-btn).mui-active {
+        background-color: transparent !important;
+    }
+    .my-orderlist-after:after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 1px;
+        background-color: #c8c7cc;
+        content: '';
+        -webkit-transform: scaleY(0.5);
+        transform: scaleY(0.5);
+        display: block;
+    }
+    .my-order-zindex999 {
+        z-index: 999;
+    }
+    .my-order-collapse {
+        display: none;
+        position: fixed !important;
+        z-index: 1111 !important;
+        line-height: 20px !important;
+        top: 35px !important;
+        left: 0 !important;
+        margin: 10px 0;
+        width: 100%;
+        li {
+            margin: 0;
+            padding: 11px 0;
+            &:first-child{
+                border-top: 1px solid $c-gray-8;
+            }
+            > span{
+                float: left;
+                margin-left: 20px;
+                font-size: 1.2rem;
+            }
+            .iconfont{
+                float: right;
+                padding: 0;
+                padding-right: 10px;
+                font-size: 1.2rem;
+            }
+            &.active {
+                color: $c-red-0;
+            }
+        }
+    }
+    .my-order-h {
+        width: 100% !important;
+    }
+    .my-order {
+        background-color: transparent !important;
+    }
+    .my-order-ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    .my-order-li {
+        margin: 0 !important;
+        padding: 11px 0 !important;
+    }
+    .my-order-a {
+        margin-left: 40px !important;
+    }
+    .my-order-lh20 {
+        line-height: 20px !important;
+    }
+    .my-order-a-mt {
+        margin-top: -20px !important;
+        margin-left: -65px !important;
+    }
+    .order-goodsheight{
+        max-height: 60px !important;
+        -webkit-line-clamp: 4 !important;
+    }
+    
+    .order-type-list{
+        white-space: nowrap;
+        overflow-x: scroll;
+        font-size: 0px;
+        background-color: $c-white-0;
+        > a{
+            display: inline-block;
+            padding: 10px;
+            width: 20%;
+            height: 40px;
+            line-height: 20px;
+            font-size: 1.2rem;
+            text-align: center;
+            &.active{
+                color: $c-red-0;
+            }
+        }
+    }
+    
+}
+
+

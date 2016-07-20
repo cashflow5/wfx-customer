@@ -1,0 +1,19 @@
+.#{$yg-namespace}weixin-authorisation{
+    .#{$yg-namespace}floor-weixin{
+        padding: 64px 0 10px;
+        text-align: center;
+        .logo-box{
+            display: inline-block;
+            width: 110px;
+            height: 110px;
+            border-radius: 20px;
+            border: 1px solid $c-gray-8;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}

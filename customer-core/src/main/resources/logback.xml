@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <!--配置全局变量-->
+    <property name="LOG_HOME" value="/data/applogs/wfx-customer" />
+
+    <!-- 控制台输出 -->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 普通log输出 -->
+    <appender name="dailyRolling"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/wfx.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/%d{yyyy,aux}/%d{yyyy-MM,aux}/wfx.%d{yyyy-MM-dd}.%i.log
+            </fileNamePattern>
+            <timeBasedFileNamingAndTriggeringPolicy
+                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
+                <maxFileSize>20MB</maxFileSize>
+            </timeBasedFileNamingAndTriggeringPolicy>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- error级别错误日志文件 -->
+    <appender name="errorDailyRolling" class="ch.qos.logback.core.FileAppender">
+        <file>${LOG_HOME}/wfx-error.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <append>true</append>
+        <encoder>
+            <pattern>%d %-5level %logger{80} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="stdout" />
+        <appender-ref ref="dailyRolling" />
+        <appender-ref ref="errorDailyRolling" />
+    </root>
+</configuration>

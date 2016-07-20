@@ -1,0 +1,31 @@
+.#{$yg-namespace}shop-erweima {
+    .shop-bg-div {
+        background-image: url("../images/shoperweimabg.jpg");
+        background-repeat: repeat-x;
+        background-size: 100% 100%;
+        padding: 30px 35px;
+    }
+    .shop-er-f {
+        font-weight: bold;
+    }
+    .shop-er-pb35 {
+        padding-bottom: 35px !important;
+    }
+    .shop-er-ml75 {
+        margin-left: -75px !important;
+    }
+    .shop-div-b {
+        width: 100%;
+        height: 100%;
+        border: 1px solid white;
+        border-radius: 2px;
+        background-color: white;
+        padding: 10px;
+        
+    }
+    .shop-erweima-ig{
+        width: 70%;
+        height: 70%;
+    }
+    
+}

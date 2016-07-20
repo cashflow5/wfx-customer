@@ -1,0 +1,58 @@
+.#{$yg-namespace}income-detail {
+    .cor-094{
+        color: #094;
+    }
+    .c-mui-row{
+        position: relative;
+        padding: 0 15px;
+        height: 60px;
+        background: #fff;
+        .mui-row{
+            line-height: 40px;
+            font-size: 1.8rem;
+        }
+        &:after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            background-color: #c8c7cc;
+            content: '';
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        &:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 1px;
+            background-color: #c8c7cc;
+            content: '';
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+    }
+    .yg-visitor-records {
+        .mui-table-view-cell {
+            padding: 7px 15px;
+            &:after {
+                height: 0;
+            }
+            .fxs-colum-afterdiaplay {
+                line-height: 1.3;
+                .yg-layout-left {
+                    width: 65px;
+                    color: #848484;
+                }
+                .yg-layout-main {
+                    .yg-layout-container {
+                        margin-left: 65px;
+                        text-align: right;
+                    }
+                }
+            }
+        }
+    }
+}

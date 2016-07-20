@@ -1,0 +1,68 @@
+.#{$yg-namespace}ufans-a {
+    .cor-f8b453 {
+        color: #f8b453 !important;
+        border: 2px solid #f8b453;
+    }
+    .cor-ff5256 {
+        color: #ff5256 !important;
+        border: 2px solid #ff5256;
+    }
+    .cor-43a6fb {
+        color: #43a6fb !important;
+        border: 2px solid #43a6fb;
+    }
+    .cor-00c800 {
+        color: #00c800 !important;
+    }
+    .icon-cc {
+        border-radius: 50px;
+        width: 40px !important;
+        height: 40px !important;
+        padding: 5px;
+        font-size: 23px !important;
+        display: inline-block;
+        padding-top: 8px !important;
+    }
+    .mui-navigate-right:after {
+        color: #8dBFea !important;
+    }
+//  .mui-bar-tab {
+//      .mui-active {
+//          color: #848484;
+//      }
+//  }
+    .user-info-box {
+        .system-share {
+            position: absolute;
+            right: 10px;
+            top: 50px;
+            color: #fff;
+        }
+        .user-head {
+            margin: 10px 15px;
+            width: 70px;
+            height: 70px;
+        }
+        .user-info {
+            position: absolute;
+            left: 95px;
+            top: 35px;
+            color: #fff;
+            .perfect-login-info {
+                padding: 2px 7px;
+                color: #cf2a52;
+                background: #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+    .c-bar-tab {
+        position: relative;
+        padding: 0;
+        border-bottom: 1px solid #c8c7cc;
+        a {
+            padding: 10px 0;
+            border-right: 1px solid #c8c7cc;
+        }
+    }
+}

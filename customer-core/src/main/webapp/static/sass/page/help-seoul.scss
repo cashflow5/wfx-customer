@@ -1,0 +1,20 @@
+.#{$yg-namespace}help-seoul {
+    .#{$yg-namespace}question-block {
+        padding: 10px;
+        border-bottom: 1px solid $c-gray-2;
+        .text-item {
+            display: table;
+            >.user-name {
+                width: 22px;
+                text-align: right;
+            }
+            > .user-name,
+            .question-text {
+                display: table-cell;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
